@@ -1,6 +1,6 @@
 {
     "name": "@cemiltan/isuwa-oauth-client",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "JavaScript SDK for ISUWA OAuth2 (client_credentials flow with JWKS verification)",
     "type": "module",
     "main": "index.js",
