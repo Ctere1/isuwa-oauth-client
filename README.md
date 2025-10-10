@@ -1,6 +1,6 @@
-# @isuwa/oauth-client
+# isuwa-oauth-client
 
-[![npm version](https://img.shields.io/npm/v/@isuwa/oauth-client.svg)](https://www.npmjs.com/package/@isuwa/oauth-client)
+[![npm version](https://img.shields.io/npm/v/@cemiltan/isuwa-oauth-client.svg)](https://www.npmjs.com/package/@cemiltan/isuwa-oauth-client)
 [![GitHub stars](https://img.shields.io/github/stars/Ctere1/isuwa-oauth-client.svg)](https://github.com/Ctere1/isuwa-oauth-client)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
