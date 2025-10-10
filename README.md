@@ -17,13 +17,13 @@ Supports:
 ## 🚀 Installation
 
 ```bash
-npm install @isuwa/oauth-client
+npm install @cemiltan/isuwa-oauth-client
 ```
 
 ## Usage Example
 
 ```javascript
-import OAuthClient from '@isuwa/oauth-client';
+import OAuthClient from '@cemiltan/isuwa-oauth-client';
 
 const oauth = new OAuthClient({
   baseUrl: 'https://auth.yourdomain.com',
