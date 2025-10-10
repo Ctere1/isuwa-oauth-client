@@ -1,0 +1,33 @@
+{
+    "name": "@isuwa/oauth-client",
+    "version": "1.0.0",
+    "description": "JavaScript SDK for ISUWA OAuth2 (client_credentials flow with JWKS verification)",
+    "type": "module",
+    "main": "index.js",
+    "module": "index.js",
+    "author": "Cemil Tan <cemiltan896@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.12.2",
+        "jsonwebtoken": "^9.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ctere1/isuwa-oauth-client.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Ctere1/isuwa-oauth-client/issues"
+    },
+    "homepage": "https://github.com/Ctere1/isuwa-oauth-client#readme",
+    "keywords": [
+        "oauth2",
+        "jwt",
+        "jwks",
+        "sdk",
+        "isuwa",
+        "client_credentials"
+    ],
+    "publishConfig": {
+        "access": "public"
+    }
+}
