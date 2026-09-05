@@ -1,33 +1,75 @@
 {
-    "name": "@cemiltan/isuwa-oauth-client",
-    "version": "1.0.2",
-    "description": "JavaScript SDK for ISUWA OAuth2 (client_credentials flow with JWKS verification)",
-    "type": "module",
-    "main": "index.js",
-    "module": "index.js",
-    "author": "Cemil Tan <cemiltan896@gmail.com>",
-    "license": "MIT",
-    "dependencies": {
-        "axios": "^1.12.2",
-        "jsonwebtoken": "^9.0.2"
+  "name": "@cemiltan/isuwa-oauth-client",
+  "version": "2.0.0",
+  "description": "JavaScript/TypeScript SDK for ISUWA IAM OAuth2: client_credentials tokens, JWKS verification, and authenticated requests",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Ctere1/isuwa-oauth-client.git"
-    },
-    "bugs": {
-        "url": "https://github.com/Ctere1/isuwa-oauth-client/issues"
-    },
-    "homepage": "https://github.com/Ctere1/isuwa-oauth-client#readme",
-    "keywords": [
-        "oauth2",
-        "jwt",
-        "jwks",
-        "sdk",
-        "isuwa",
-        "client_credentials"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "MIGRATION.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "author": "Cemil Tan <cemiltan896@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.4.1",
+    "@vitest/coverage-v8": "^5.0.0",
+    "eslint": "^10.10.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.69.0",
+    "vitest": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ctere1/isuwa-oauth-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ctere1/isuwa-oauth-client/issues"
+  },
+  "homepage": "https://github.com/Ctere1/isuwa-oauth-client#readme",
+  "keywords": [
+    "oauth2",
+    "jwt",
+    "jwks",
+    "sdk",
+    "isuwa",
+    "iam",
+    "client_credentials"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
 }
